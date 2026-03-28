@@ -1,0 +1,95 @@
+# Module 1 — Environment setup
+
+Install **Python** and **Visual Studio Code**, then confirm everything works. Use **Python 3.12 or newer**.
+
+---
+
+## 1. Install Python (Windows)
+
+1. Open [python.org/downloads](https://www.python.org/downloads/) and download the latest **Python 3.12+** installer for Windows.
+2. Run the installer. **Important:** check **“Add python.exe to PATH”**, then choose **Install Now**.
+3. Close and reopen **PowerShell** or **Command Prompt**.
+
+**Check:**
+
+```powershell
+python --version
+```
+
+You should see `Python 3.12.x` (or higher). If `python` is not found, try:
+
+```powershell
+py --version
+```
+
+Use `py` instead of `python` for the rest of the course if that works on your PC.
+
+**pip** (installs libraries) comes with Python. Check:
+
+```powershell
+python -m pip --version
+```
+
+---
+
+## 2. Install Visual Studio Code
+
+1. Open [code.visualstudio.com](https://code.visualstudio.com/) and download VS Code for Windows.
+2. Run the installer and finish the wizard (defaults are fine).
+3. Open VS Code.
+
+---
+
+## 3. Set up VS Code for Python
+
+1. In VS Code, open the **Extensions** view (`Ctrl+Shift+X`).
+2. Search for **Python** (publisher: **Microsoft**) and click **Install**.
+3. Optional but useful: install **Pylance** (often installed with Python).
+
+**Pick the Python you installed**
+
+1. `Ctrl+Shift+P` → type **Python: Select Interpreter**.
+2. Choose the interpreter that matches **3.12+** (path usually includes `Python312` or similar).
+
+**Open your course folder**
+
+- **File → Open Folder** → select your `python-2026` (or project) folder.
+
+**Run a file**
+
+- Create `hello.py` with `print("Hello")`, open it, then press **`F5`** or use the **Run** button and choose **Python File**.
+
+---
+
+## 4. macOS (short)
+
+1. Install Python from [python.org/downloads](https://www.python.org/downloads/) or `brew install python@3.12` if you use Homebrew.
+2. Install VS Code from [code.visualstudio.com](https://code.visualstudio.com/).
+3. Add the **Python** extension, then **Python: Select Interpreter** → pick 3.12+.
+
+Check in Terminal: `python3 --version`
+
+---
+
+## 5. Linux (short)
+
+```bash
+# Example: Ubuntu/Debian
+sudo apt update && sudo apt install python3 python3-pip python3-venv
+```
+
+Install VS Code from [code.visualstudio.com](https://code.visualstudio.com/docs/setup/linux) (or your distro’s package manager), then add the **Python** extension and select the interpreter.
+
+Check: `python3 --version`
+
+---
+
+## Done?
+
+You should have:
+
+- [ ] `python` / `py` / `python3` showing **3.12+**
+- [ ] VS Code opens and runs a small `.py` file
+- [ ] Python extension installed and interpreter selected
+
+If something fails, copy the **full error message** from the terminal or VS Code and ask in class.
